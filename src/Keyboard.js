@@ -19,7 +19,9 @@ class Keyboard extends Component {
 						</View>
 					);
 				})}
-				<Key value={0} use={this.isUse(0)} />
+				<View style={styles.numberRow}>
+					<Key value={0} use={this.isUse(0)} />
+				</View>
 			</View>
 		);
 	}
@@ -31,7 +33,9 @@ Keyboard.propTypes = {
 
 const styles = StyleSheet.create({
 	numberRow: {
-		flexDirection: "row"
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "center"
 	}
 });
 

@@ -33,16 +33,6 @@ const styles = StyleSheet.create({
 		borderWidth: 1,
 		borderColor: "black"
 	},
-	key: {
-		margin: 10,
-		alignItems: "center",
-		backgroundColor: "white",
-		borderWidth: 1,
-		borderColor: "black",
-		borderRadius: 100,
-		width: 40,
-		height: 40
-	},
 	number: {
 		fontSize: 26,
 		margin: 10,
@@ -50,7 +40,8 @@ const styles = StyleSheet.create({
 		backgroundColor: "white",
 		borderWidth: 1,
 		borderColor: "black",
-		borderRadius: 100
+		borderRadius: 100,
+		padding: 10
 	}
 });
 

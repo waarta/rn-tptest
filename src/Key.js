@@ -20,6 +20,7 @@ class Key extends Component {
 }
 
 Key.propTypes = {
+	value: PropTypes.number,
 	use: PropTypes.bool
 };
 
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
 	key: {
 		margin: 10,
 		alignItems: "center",
-		backgroundColor: "white",
+		justifyContent: "center",
 		borderWidth: 1,
 		borderColor: "black",
 		borderRadius: 100,
