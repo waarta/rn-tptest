@@ -29,7 +29,10 @@ class ViewContact extends Component {
 					nextContact={this.props.nextContact}
 					prevContact={this.props.prevContact}
 				/>
-				<PhoneNumber dimensionGrid={this.state.dimensionGrid} />
+				<PhoneNumber
+					dimensionGrid={this.state.dimensionGrid}
+					numContact={this.props.contact["num"]}
+				/>
 			</View>
 		);
 	}

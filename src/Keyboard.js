@@ -6,15 +6,7 @@ import Key from "./Key";
 class Keyboard extends Component {
 	render() {
 		return (
-			<View
-				style={[
-					styles.carre,
-					{
-						width: this.props.dimensionGrid,
-						height: this.props.dimensionGrid
-					}
-				]}
-			>
+			<View>
 				{[0, 1, 2].map(i => {
 					return (
 						<View key={"row_" + i} style={styles.numberRow}>
@@ -30,16 +22,9 @@ class Keyboard extends Component {
 	}
 }
 
-Keyboard.propTypes = {
-	dimensionGrid: PropTypes.number
-};
+Keyboard.propTypes = {};
 
 const styles = StyleSheet.create({
-	carre: {
-		alignItems: "center",
-		borderWidth: 1,
-		borderColor: "black"
-	},
 	numberRow: {
 		flexDirection: "row"
 	}

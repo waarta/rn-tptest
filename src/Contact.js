@@ -10,13 +10,17 @@ class Contact extends Component {
 				{
 					nom: "momo",
 					photo: require("../img/android.png"),
-					num: "0260410134"
+					num: "02 60 41 01 34"
 				},
-				{ nom: "toto", photo: require("../img/biere.png"), num: "0792254068" },
+				{
+					nom: "toto",
+					photo: require("../img/biere.png"),
+					num: "07 92 25 40 68"
+				},
 				{
 					nom: "azerty",
 					photo: require("../img/canards.jpg"),
-					num: "0495861285"
+					num: "04 95 86 12 85"
 				}
 			],
 			currentContact: 0
