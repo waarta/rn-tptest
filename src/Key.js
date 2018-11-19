@@ -5,7 +5,14 @@ import PropTypes from "prop-types";
 class Key extends Component {
 	render() {
 		return (
-			<View style={styles.key}>
+			<View
+				style={[
+					styles.key,
+					{
+						backgroundColor: this.props.use ? "green" : "white"
+					}
+				]}
+			>
 				<Text style={styles.number}>{this.props.value}</Text>
 			</View>
 		);
