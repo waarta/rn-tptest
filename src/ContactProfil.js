@@ -6,7 +6,9 @@ class ContactProfil extends Component {
 	render() {
 		return (
 			<View>
-				<Text>{this.props.nomContact}</Text>
+				<View style={styles.titre}>
+					<Text style={styles.txt}>{this.props.nomContact}</Text>
+				</View>
 				<View style={styles.container}>
 					<View style={styles.button}>
 						<Button
@@ -51,8 +53,11 @@ const styles = StyleSheet.create({
 		margin: 50,
 		width: 50
 	},
+	titre: {
+		alignItems: "center"
+	},
 	txt: {
-		justifyContent: "center"
+		fontSize: 24
 	}
 });
 export default ContactProfil;
